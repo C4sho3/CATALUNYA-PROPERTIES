@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalunya Properties</title>
+  <meta name="description" content="Venta de propiedades de lujo en Catalunya para clientes internacionales y locales. Conectamos compradores con las mejores inmobiliarias y promotoras." />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">Catalunya Properties</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#propiedades">Propiedades</a></li>
+        <li><a href="#mapa">Mapa</a></li>
+        <li><a href="about.html">Sobre nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Tu enlace a la mejor propiedad de lujo en Catalunya</h2>
+    <p>Unimos compradores exigentes con inmobiliarias de prestigio.</p>
+  </section>
+
+  <section id="propiedades" class="properties">
+    <h3>Propiedades destacadas</h3>
+    <div class="property-list">
+      <article class="property">
+        <img src="https://source.unsplash.com/600x400/?house,luxury" alt="Villa de lujo">
+        <h4>Villa con vistas al Mediterráneo</h4>
+        <p>5 habitaciones · 4 baños · 450 m²</p>
+      </article>
+      <article class="property">
+        <img src="https://source.unsplash.com/601x400/?apartment,design" alt="Ático exclusivo">
+        <h4>Ático en el corazón de Barcelona</h4>
+        <p>3 habitaciones · 2 baños · 180 m²</p>
+      </article>
+      <article class="property">
+        <img src="https://source.unsplash.com/602x400/?house,pool" alt="Casa moderna">
+        <h4>Residencia con piscina privada</h4>
+        <p>4 habitaciones · 3 baños · 320 m²</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="mapa" class="map-section">
+    <h3>Encuentra tu zona ideal</h3>
+    <div id="map"></div>
+  </section>
+
+  <section class="lead-form">
+    <h3>¿Interesado en alguna propiedad?</h3>
+    <form method="post" action="#">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 Catalunya Properties. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-oGNe5mZMHgk4uzxSX3A7AUMOfLu+BkvZWS4DRqtkt5I=" crossorigin="" ></script>
+  <script src="script.js"></script>
+</body>
+</html>
